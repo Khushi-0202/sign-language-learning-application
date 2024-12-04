@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Sign Language App</title>
+    <link rel="stylesheet" href="./quiz.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sign Language App - Quiz</h1>
+    </header>
+
+    <nav class="nav_menu">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./lessons.html">Lessons</a></li>
+            <li><a href="./quiz.html" class="active">Quiz</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div class="quiz-container">
+            <h2>Test Your Knowledge</h2>
+
+            <div class="quiz-question">
+                <p>What is the sign for "hello" in ASL?</p>
+            </div>
+            <div class="quiz-options">
+                <label><input type="radio" name="q1" value="a"> Wave your hand</label>
+                <label><input type="radio" name="q1" value="b"> Touch your ear</label>
+                <label><input type="radio" name="q1" value="c"> Cross your arms</label>
+                <label><input type="radio" name="q1" value="d"> Point at your lips</label>
+            </div>
+
+            <div class="quiz-question">
+                <p>How do you sign "thank you" in ASL?</p>
+            </div>
+            <div class="quiz-options">
+                <label><input type="radio" name="q2" value="a"> Tap your chin and move your hand outward</label>
+                <label><input type="radio" name="q2" value="b"> Clap your hands</label>
+                <label><input type="radio" name="q2" value="c"> Nod your head</label>
+                <label><input type="radio" name="q2" value="d"> Wave your hand</label>
+            </div>
+
+            <button class="quiz-button" onclick="submitQuiz()">Submit Answers</button>
+
+            <div class="footer">
+                <p>&copy; 2024 Sign Language App</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sign Language App. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            
+            if (q1 && q1.value === 'a') score++;
+            if (q2 && q2.value === 'a') score++;
+
+            alert(`You scored ${score} out of 2!`);
+        }
+    </script>
+
+</body>
+
+</html>

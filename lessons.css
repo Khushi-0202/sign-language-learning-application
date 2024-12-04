@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2d3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav_menu {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.nav_menu ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_menu ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav_menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav_menu ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+}
+
+.lesson-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.lesson-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.lesson-card .lesson-info {
+    flex-grow: 1;
+}
+
+.lesson-card h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.lesson-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.lesson-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.lesson-card button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #2d3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
